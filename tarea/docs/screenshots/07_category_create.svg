@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="100%" height="100%" fill="#fff6fa"/>
+  <rect x="80" y="60" width="1120" height="600" rx="12" fill="#fff" stroke="#ffdae9" stroke-width="3"/>
+  <text x="640" y="110" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#e65a8a" font-weight="700">Crear Categoría - Ejemplo</text>
+  <text x="640" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#7a7a7a">Captura de ejemplo: 07_category_create.png</text>
+</svg>

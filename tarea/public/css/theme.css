@@ -1,0 +1,92 @@
+/* Custom Theme Styles - Pink Theme */
+
+/* Override Bootstrap primary color */
+:root {
+    --bs-primary: #f5145f;
+    --bs-primary-rgb: 233, 30, 99;
+}
+
+/* Body background */
+body {
+    background-color: #fce4ec !important;
+}
+
+/* Card backgrounds */
+.card {
+    background-color: #ffffff !important;
+    border: 1px solid #f8bbd9 !important;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #e91e63 !important;
+    border-color: #e91e63 !important;
+}
+
+.btn-primary:hover {
+    background-color: #c2185b !important;
+    border-color: #ad1457 !important;
+}
+
+/* Text colors */
+.text-primary {
+    color: #e91e63 !important;
+}
+
+/* Links */
+a {
+    color: #e91e63 !important;
+}
+
+a:hover {
+    color: #c2185b !important;
+}
+
+/* Form controls */
+.form-control {
+    border-color: #f8bbd9 !important;
+}
+
+.form-control:focus {
+    border-color: #e91e63 !important;
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25) !important;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #e91e63 !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fce4ec !important;
+}
+
+/* Tables */
+.table {
+    background-color: #ffffff !important;
+}
+
+.table thead th {
+    background-color: #fce4ec !important;
+    border-color: #f8bbd9 !important;
+}
+
+/* Alerts */
+.alert-primary {
+    background-color: #fce4ec !important;
+    border-color: #f8bbd9 !important;
+    color: #ad1457 !important;
+}
+
+/* Additional custom styles for consistency */
+.bg-light {
+    background-color: #fce4ec !important;
+}
+
+.border {
+    border-color: #f8bbd9 !important;
+}

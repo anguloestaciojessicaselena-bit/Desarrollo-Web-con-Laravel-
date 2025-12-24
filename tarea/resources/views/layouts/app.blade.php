@@ -17,6 +17,14 @@
     <!-- Custom Theme -->
     <link href="{{ asset('css/theme.css') }}" rel="stylesheet">
     
+    <!-- Theme Initialization Script (Anti-flicker) -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    
     @stack('styles')
 </head>
 <body>
@@ -100,6 +108,9 @@
             </button>
             
             <div class="d-flex align-items-center gap-3">
+                <button class="theme-toggle" id="theme-toggle" title="Cambiar tema">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
                 <span class="text-secondary">{{ now()->format('l, F j, Y') }}</span>
             </div>
         </div>
@@ -132,6 +143,7 @@
         });
     </script>
     
+    <script src="{{ asset('js/theme-toggle.js') }}"></script>
     @stack('scripts')
 </body>
 </html>

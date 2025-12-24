@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Custom Theme -->
     <link href="{{ asset('css/theme.css') }}" rel="stylesheet">
+    
+    <!-- Theme Initialization Script (Anti-flicker) -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
 </head>
 <body>
     <!-- Simple Navbar for Public Pages -->
@@ -45,6 +53,11 @@
                             <a class="nav-link" href="{{ route('dashboard') }}" style="color: var(--text-secondary);">Dashboard</a>
                         </li>
                     @endguest
+                    <li class="nav-item ms-lg-3 d-flex align-items-center">
+                        <button class="theme-toggle" id="theme-toggle" title="Cambiar tema">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -73,5 +86,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('js/theme-toggle.js') }}"></script>
 </body>
 </html>
